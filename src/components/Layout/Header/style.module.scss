@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+  margin: 8px auto 0;
+}
+
+.data_pick {
+  background-color: transparent;
+  color: white;
+  :global {
+    .ant-picker-input {
+      input {
+        font-size: 20px;
+      }
+      .ant-picker-suffix,
+      .ant-picker-clear {
+        display: none;
+      }
+    }
+  }
+}

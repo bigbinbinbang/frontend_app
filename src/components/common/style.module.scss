@@ -1,0 +1,58 @@
+.card_pannel {
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(to right bottom, #111d26, #29343b);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #6d8292;
+  margin-bottom: 20px;
+  &::before {
+    content: '';
+    width: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #5160ed;
+  }
+  .card_title{
+    margin: 4px auto;
+  }
+  .number {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    padding: 5px 0;
+    margin: 0 auto;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .old{
+    margin: 4px auto;
+  }
+  .number_old {
+    font-weight: bold;
+    color: #43eae8;
+    font-size: 18px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: transparent transparent transparent #5160ed;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 8px;
+    bottom: 3px;
+  }
+}

@@ -1,0 +1,72 @@
+$fontColor: rgba(255, 255, 255, 0.8);
+$border-color: rgba(126, 136, 144, 0.4);
+.row {
+  margin-bottom: 10px;
+  :global {
+    .ant-table-wrapper {
+      .ant-table {
+        background-color: transparent;
+        color: $fontColor;
+        .ant-table-tbody {
+          border-radius: 10px;
+          overflow: hidden;
+          .ant-table-row {
+            &:first-of-type {
+              .ant-table-cell {
+                border-top: 1px solid $border-color;
+              }
+            }
+            &:last-of-type {
+              .ant-table-cell {
+                border-bottom: 1px solid $border-color;
+              }
+            }
+          }
+          .ant-table-cell {
+            color: white;
+            font-weight: bold;
+            padding: 0;
+            &.color_1 {
+              background-color: #243539;
+            }
+            &.color_2 {
+              background-color: #3b2525;
+            }
+            &.color_3 {
+              background-color: #2a322b;
+            }
+            &.border {
+              border-left: 1px solid $border-color;
+            }
+            &.borderR {
+              border-right: 1px solid $border-color;
+            }
+            p {
+              margin: 4px auto;
+              padding: 3px 0;
+            }
+          }
+          .ant-table-placeholder {
+            background-color: transparent;
+            .ant-empty-description {
+              color: $fontColor;
+            }
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+        .ant-table-cell {
+          background-color: transparent;
+          color: $fontColor;
+          border-bottom-color: $border-color;
+          text-align: center;
+          border: none;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

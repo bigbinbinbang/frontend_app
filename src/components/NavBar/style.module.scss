@@ -1,0 +1,58 @@
+$border-color: rgba(126, 136, 144, 0.4);
+$fontColor: rgba(255, 255, 255, 0.8);
+.common_title {
+  padding-left: 4px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fffc;
+  border-bottom: rgba(126, 136, 144, 0.4) 3px solid;
+  letter-spacing: 0px;
+  position: relative;
+  box-sizing: border-box;
+  font-style: italic;
+  font-weight: 700;
+  &::after {
+    content: '';
+    width: 105px;
+    height: 3px;
+    left: 2px;
+    top: 30px;
+    position: absolute;
+    background-color: #44a9eb;
+  }
+}
+
+.bth_group {
+  text-align: right;
+  :global {
+    .ant-select {
+      width: 140px;
+      color: $fontColor;
+      .ant-select-selector {
+        background-color: #232e36;
+        border-color: $border-color;
+        color: $fontColor;
+        text-align: left;
+        .ant-select-selection-item {
+          color: $fontColor;
+        }
+      }
+      .ant-select-dropdown {
+        background-color: #232e36;
+        text-align: left;
+        .ant-select-item {
+          color: $fontColor;
+        }
+        .ant-select-item-option-selected {
+          color: #1677ff;
+          background-color: transparent;
+        }
+      }
+    }
+    .ant-btn {
+      color: $fontColor;
+      border-color: $border-color;
+      margin-left: 5px;
+    }
+  }
+}
